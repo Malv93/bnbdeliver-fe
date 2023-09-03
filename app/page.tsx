@@ -1,4 +1,6 @@
 import Image from "next/image";
+// components
+import AuthForm from "./components/auth-form";
 
 const navigation = [
   { name: "About", href: "#" },
@@ -65,7 +67,10 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              The rental service we need but don&apos;t deserve.{" "}
+              BnbDeliver is the hero Italy deserves, <s>but not</s> the one it
+              needs right now.”
+              <br />
+              “Detective Lt James Gordon”{" "}
               <a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
@@ -108,6 +113,19 @@ export default function Home() {
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           />
+        </div>
+      </div>
+      <div className="row bg-black">
+        <div className="col-6">
+          <h1 className="header">Supabase Auth + Storage</h1>
+          <p className="">
+            Experience our Auth and Storage through a simple profile management
+            example. Create a user profile and upload an avatar image. Fast,
+            simple, secure.
+          </p>
+        </div>
+        <div className="col-6 auth-widget">
+          <AuthForm />
         </div>
       </div>
     </div>
